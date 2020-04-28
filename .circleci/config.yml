@@ -10,6 +10,6 @@ jobs:
     steps:
      - checkout
      - run: echo "Hello CircleCI!"
-     - run:
+     - run: 
        name: Wait for DB
        comand: dockerize -wait tcp://127.0.0.1:5432 -timeout 120s
